@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #add8e6;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #87ceeb;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Página Principal</h1>
+    <p>A continuación tenemos los ejemplos de:</p>
+    
+    <button onclick="irAPagina('http://127.0.0.1:5501/ciclos.html')">CICLOS</button>
+    <button onclick="irAPagina('pagina2.html')">CADENAS</button>
+    <button onclick="irAPagina('punto2/page_cars.html')">METODOS</button>
+    <ul>
+        <li><a href="metodos.html">Métodos</a></li>
+        <li><a href="punto2/page_cars.html">Objetos</a></li>
+        <li><a href="ciclos.html">Ejemplo de Ciclos</a></li>
+    </ul>
+    
+    <footer>
+        Este proyecto está diseñado para afianzar los conceptos de JavaScript y HTML.
+    </footer>
+
+    <script src="Ciclos/js/ciclos.js"></script>
+    <script>
+        function irAPagina(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</body>
+</html>

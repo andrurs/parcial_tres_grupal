@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Marcas de Autos</title>
+    <style>
+        /* Estilos para el logotipo y la descripción */
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #d5bc19;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        #fondoMarca {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-image 0.3s ease;
+        }
+        .contenedor {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .logo {
+            max-width: 300px;
+        }
+        .descripcion {
+            font-style: italic;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #anio {
+            font-style: italic;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        select {
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="fondoMarca"></div>
+    <div class="contenedor">
+        <img class="logo" src="" alt="Logotipo de la marca">
+        <p class="descripcion"></p>
+        <p id="anio"></p>
+        <select id="marca">
+            <option value="ford">Ford</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+        </select>
+    </div>
+
+    <script src="jscript/codigoJS.js"></script>
+</body>
+</html>
